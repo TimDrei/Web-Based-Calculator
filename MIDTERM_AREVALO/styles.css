@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #f4f4f9;
+    --calculator-bg: #ddd;
+    --text-color: #000;
+    --btn-bg: #fff;
+    --btn-border: #ccc;
+    --btn-hover-bg: #eee;
+  }
+  
+  .dark-mode {
+    --bg-color: #121212;
+    --calculator-bg: #333;
+    --text-color: #fff;
+    --btn-bg: #444;
+    --btn-border: #555;
+    --btn-hover-bg: #555;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    margin: 0;
+  }
+  
+  .calculator {
+    background-color: var(--calculator-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #display {
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 1px solid var(--btn-border);
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: var(--btn-hover-bg);
+  }
+  
+  .dark-mode-toggle {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: 1px solid var(--btn-border);
+    cursor: pointer;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: var(--btn-hover-bg);
+  }
+  
+  .copyright {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+  }
+
+  .dark-mode-toggle {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: 1px solid var(--btn-border);
+    cursor: pointer;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: var(--btn-hover-bg);
+  }
+
+  .calculator {
+    background-color: var(--calculator-bg);
+    padding: 15px;
+    border: 2px solid gold; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
